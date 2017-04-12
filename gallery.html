@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--Title of Website-->
+    <title> AAA Clicks </title>
+    <!--Linking different types of sheets-->
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="css/gallery.css"/>
+  </head>
+
+  <body>
+    <div class = "header">
+
+  <!--Linking different pages-->
+
+        <div class = "nav">
+        <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+
+          <div class= "links">
+            <a href="index.html">HOME</a>
+            &bull;
+            <a href="about.html">ABOUT</a>
+            &bull;
+            <a href="gallery.html">GALLERY</a>
+          </div>
+
+        </div>
+
+      </div>
+
+<!--Creating a gallery and putting in some images-->
+
+  <div class ="Gallery">
+
+  <h2>Night Photography</h2>
+  <img id="myImg" src="images/night/hover_1.jpg" width="237" height="200">
+  <img id="myImg1" src="images/night/hover_2.jpg" width="237" height="200">
+  <img id="myImg2" src="images/night/hover_3.jpg" width="237" height="200">
+  <img id="myImg3" src="images/night/hover_4.jpg" width="237" height="200">
+
+  <h2>Landscape Photography</h2>
+  <img id="myImg4" src="images/landscape/hover_1.jpg" width="237" height="200">
+  <img id="myImg5" src="images/landscape/hover_2.jpg" width="237" height="200">
+  <img id="myImg6" src="images/landscape/hover_3.jpg" width="237" height="200">
+  <img id="myImg7" src="images/landscape/hover_4.jpg" width="237" height="200">
+
+  <h2>Wildlife Photography</h2>
+  <img id="myImg8" src="images/wildlife/hover_1.jpg" width="237" height="200">
+  <img id="myImg9" src="images/wildlife/hover_2.jpg" width="237" height="200">
+  <img id="myImg10" src="images/wildlife/hover_3.jpg" width="237" height="200">
+  <img id="myImg11" src="images/wildlife/hover_4.jpg" width="237" height="200">
+
+  <h2>Architecture Photography</h2>
+  <img id="myImg12" src="images/architecture/hover_1.jpg" width="200" height="200">
+  <img id="myImg13" src="images/architecture/hover_2.jpg" width="237" height="200">
+  <img id="myImg14" src="images/architecture/hover_3.jpg" width="237" height="200">
+  <img id="myImg15" src="images/architecture/hover_4.jpg" width="237" height="200">
+
+  <h2>People Photography</h2>
+  <img id="myImg16" src="images/people/hover_1.jpg" width="210" height="237">
+  <img id="myImg17" src="images/people/hover_2.jpg" width="210" height="237">
+  <img id="myImg18" src="images/people/hover_3.jpg" width="210" height="237">
+</div>
+
+  <!-- The image popup -->
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+<script>
+
+var modal = document.getElementById('myModal');
+
+<!--Get the image and insert it inside the modal - use its "alt" text as a caption-->
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.getElementById('myImg5');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg6');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg7');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg9');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg10');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg11');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg12');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg13');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg14');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg15');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg16');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg17');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+var img = document.getElementById('myImg18');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on (x), it closes the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+  </body>
+
+</html>

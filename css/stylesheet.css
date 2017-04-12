@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+/* Styling each div and element on the website */
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  background: #626664;
+}
+
+
+.header{
+  height: 70px;
+  color: white;
+  background-color: #9EA3A1;
+}
+
+.header nav{
+  opacity: 0.5;
+}
+
+.nav{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo{
+  float: left;
+  margin-top: 35px;
+}
+
+#logo{
+  position: absolute;
+  top: -170px;
+  left: 75px;
+  height: 500px;
+  width: 300px;
+}
+
+.links{
+  float: right;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  color: #4b4e61;
+}
+
+.links a{
+  font-family: 'Lato', sans-serif;
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section{
+  position: absolute;
+  width: 100%;
+  left: 160px;
+  height: auto;
+  color: black;
+}
+
+.about h1{
+  position: absolute;
+  color: white;
+  float: left;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+h3{
+  float: left;
+  color: white;
+  font-size:  1.25rem;
+  font-family: 'Lato', sans-serif;
+}
+
+h2{
+  font-size: 1.25rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+q{
+  float: left;
+  color: white;
+  position: absolute;
+  top: 100px;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+h6{
+  position: absolute;
+  color: white;
+  top: 150px;
+  font-size: 1.2rem;
+  font-weight:normal;
+}
+
+p{
+  position: absolute;
+  color: white;
+  top: 250px;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h5{
+  font-size: 	0.75rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.header{
+  height: 90px;
+  color: black;
+}
+
+.about{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 20px;
+}
+
+.quote{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -10px;
+}
+
+.welcome{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -40px;
+}
+
+.info{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -50px;
+}
+
+.info2{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 10px;
+}
+
+.info3{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 80px;
+}
+
+
+/*Responsive Design Attempt*/
+@media screen and (max-width: 550px){
+  .logo{
+    float: none;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .links{
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .about h1{
+    float: none;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .about q{
+    float: none;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .about h6{
+    float: none;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .about p{
+    float: none;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+}

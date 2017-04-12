@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--Title of Website-->
+    <title> AAA Clicks </title>
+    <!--Linking different types of sheets-->
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="css/slider.css"/>
+  </head>
+
+  <body>
+    <div class = "header">
+      <!--Linking different pages-->
+        <div class = "nav">
+          <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+
+          <div class= "links">
+            <a href="index.html">HOME</a>
+            &bull;
+            <a href="about.html">ABOUT</a>
+            &bull;
+            <a href="gallery.html">GALLERY</a>
+          </div>
+
+        </div>
+
+      </div>
+
+<!--Creating a slideshow and putting in some images-->
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+  <img id="slide_1" src="images/slider/slide_1.jpg"/>
+  </div>
+
+  <div class="mySlides fade">
+  <img id="slide_3" src="images/slider/slide_2.jpg"/>
+  </div>
+
+  <div class="mySlides fade">
+  <img id="slide_2" src="images/slider/slide_3.jpg"/>
+  </div>
+
+
+  <div class="mySlides fade">
+  <img id="slide_4" src="images/slider/slide_4.jpg"/>
+  </div>
+
+<!--Showing arrows prev and next to control slideshow-->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!--Javascript for calling the slideshow images for it to work-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+  </body>
+
+</html>
